@@ -44,6 +44,11 @@ final class CanvasAppDelegate: StartupSplashDelegate {
                 .frame(minWidth: 730, minHeight: 520)
                 .modifier(SadeTheme())
                 .modifier(WindowEntrance())
+                .safeAreaInset(edge: .bottom, spacing: 0) { UpdateBanner(updater: updater) }
+                .onAppear { updater.checkAutomatically() }
+                .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
+                    updater.checkAutomatically()
+                }
                 .onAppear(perform: taskLibrary.refresh)
                 .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
                     taskLibrary.refresh()

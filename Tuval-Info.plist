@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string>SadeTuval.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.erdem.sade.canvas</string>
+	<string>com.edm1804.sade.canvas</string>
 	<key>CFBundleLocalizations</key>
 	<array>
 		<string>tr</string>
@@ -24,7 +24,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>29</string>
+	<string>31</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>14.0</string>
 	<key>LSMultipleInstancesProhibited</key>

@@ -35,7 +35,8 @@ CategoryBooks.swift — kitap kapaklı kategoriler ve kapak kişiselleştirme.
 SharedStyle.swift — ortak görünüm, düğmeler ve pencere animasyonu.
 Localization.swift — dil seçimi ve arayüz çeviri yardımcısı.
 Resources/tr.lproj ve Resources/en.lproj — çeviriler ve mikrofon izin açıklamaları.
-Settings.swift — görünüm seçimi ve GitHub sürüm denetimi.
+Settings.swift — görünüm, dil ve güncelleme ayarları.
+Updates.swift — sürüm karşılaştırması, günlük otomatik kontrol ve güncelleme önbelleği.
 StartupSplash.swift — yalnızca ilk açılışta gösterilen logo penceresi.
 Companion.swift — iki uygulama arasında geçiş.
 MakeAppIcons.swift — ikonları oluşturan kaynak.
@@ -45,7 +46,7 @@ Kayıtlar
 Kullanıcının Library/Application Support/Sade klasöründe tasks.json, workspace.json ve ses kayıtları bulunur. Bunlar kaynak paketine dahil değildir. Uygulama tercihleri macOS UserDefaults içinde tutulur.
 
 GitHub Releases
-Bu sürümün etiketi v1.0.0 olmalıdır. Kullanıma hazır iki uygulamayı içeren Sade.zip dosyası Release eki olarak yüklenir. Sonraki sürümlerde her uygulamanın Info.plist sürüm numarası ve sayısal Release etiketi birlikte güncellenir. Ayarlar’a girilen herkese açık GitHub deposundaki en son kararlı Release denetlenir.
+Bu sürümün etiketi v1.0.0 olmalıdır. Kullanıma hazır iki uygulamayı içeren Sade.zip dosyası Release eki olarak yüklenir. Sonraki sürümlerde her uygulamanın Info.plist sürüm numarası ve sayısal Release etiketi birlikte güncellenir. Varsayılan güncelleme deposu https://github.com/edm1804/sade adresidir. Açılışta ve uygulama yeniden etkinleştiğinde günde en fazla bir otomatik kontrol yapılır. Ayarlar’dan otomatik kontrol kapatılabilir veya depo değiştirilebilir. Yeni sürüm bulunduğunda bağlantı gösterilir. İndirme ve kurulum kullanıcıya aittir; otomatik kurulum yapılmaz. Kontrol GitHub’a bir ağ isteği gönderir; görev ve ses içeriklerini göndermez.
 
 Dağıtım durumu
 build.sh yerel kullanım için ad hoc imza üretir. Başka kullanıcılara macOS dağıtımı için Developer ID imzalama ve Apple notarization süreci ayrıca hazırlanmalıdır.

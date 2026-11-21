@@ -203,6 +203,11 @@ final class AppDelegate: StartupSplashDelegate, ObservableObject {
                 .frame(minWidth: 890, minHeight: 570)
                 .modifier(SadeTheme())
                 .modifier(WindowEntrance())
+                .safeAreaInset(edge: .bottom, spacing: 0) { UpdateBanner(updater: updater) }
+                .onAppear { updater.checkAutomatically() }
+                .onReceive(NotificationCenter.default.publisher(for: NSApplication.didBecomeActiveNotification)) { _ in
+                    updater.checkAutomatically()
+                }
                 .onChange(of: appLanguage) { _, _ in store.refreshNotificationLanguage() }
                 .onReceive(NotificationCenter.default.publisher(for: NSApplication.willTerminateNotification)) { _ in
                     if let (id, voice) = audio.finish(), let i = store.tasks.firstIndex(where: { $0.id == id }) {

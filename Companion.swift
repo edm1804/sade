@@ -9,7 +9,7 @@ enum SadeCompanion {
         }
 
         var bundleID: String {
-            self == .tasks ? "com.erdem.sade" : "com.erdem.sade.canvas"
+            self == .tasks ? "com.edm1804.sade" : "com.edm1804.sade.canvas"
         }
     }
 

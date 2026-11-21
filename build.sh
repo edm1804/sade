@@ -4,7 +4,7 @@ cd "${0:A:h}"
 export DEVELOPER_DIR=/Library/Developer/CommandLineTools
 sdk=${SADE_SDK_PATH:-/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk}
 compiler=/Library/Developer/CommandLineTools/usr/bin/swiftc
-common=(Localization.swift TaskModels.swift SharedStyle.swift Companion.swift StartupSplash.swift Settings.swift Planner.swift CategoryBooks.swift)
+common=(Updates.swift Localization.swift TaskModels.swift SharedStyle.swift Companion.swift StartupSplash.swift Settings.swift Planner.swift CategoryBooks.swift)
 flags=(-parse-as-library -sdk "$sdk" -target arm64-apple-macosx14.0 -module-cache-path "${SADE_MODULE_CACHE:-.module-cache}")
 destination=${1:-.}
 task_app="$destination/Sade.app"
