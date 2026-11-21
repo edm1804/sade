@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>tr</string>
+	<key>CFBundleDisplayName</key>
+	<string>Sade Tuval</string>
+	<key>CFBundleExecutable</key>
+	<string>SadeTuval</string>
+	<key>CFBundleIconFile</key>
+	<string>SadeTuval.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.erdem.sade.canvas</string>
+	<key>CFBundleLocalizations</key>
+	<array>
+		<string>tr</string>
+		<string>en</string>
+	</array>
+	<key>CFBundleName</key>
+	<string>Sade Tuval</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>29</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSMultipleInstancesProhibited</key>
+	<true/>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+</dict>
+</plist>
